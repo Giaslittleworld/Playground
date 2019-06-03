@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaygroundLibrary", "PlaygroundLibrary\PlaygroundLibrary.csproj", "{955BEB99-425A-4264-A362-292CC2D05306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaygroundWPFUI", "PlaygroundWPFUI\PlaygroundWPFUI.csproj", "{02EB8BC2-2B4C-44BA-8998-C996CE11B64B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{955BEB99-425A-4264-A362-292CC2D05306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955BEB99-425A-4264-A362-292CC2D05306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955BEB99-425A-4264-A362-292CC2D05306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955BEB99-425A-4264-A362-292CC2D05306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EB8BC2-2B4C-44BA-8998-C996CE11B64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EB8BC2-2B4C-44BA-8998-C996CE11B64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EB8BC2-2B4C-44BA-8998-C996CE11B64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EB8BC2-2B4C-44BA-8998-C996CE11B64B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADA0FFA9-0354-42C0-A059-1B26C65EB917}
+	EndGlobalSection
+EndGlobal
