@@ -14,5 +14,10 @@ namespace PlaygroundWPFUI.ViewModels
         {
             ActivateItem(new CelebratePersonViewModel());
         }
+
+        public void ShowCreateUserView()
+        {
+            ActivateItem(new CreateUserViewModel());
+        }
     }
 }

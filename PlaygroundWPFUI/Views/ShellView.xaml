@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlaygroundWPFUI.Views"
-        mc:Ignorable="d" FontSize="24" FontFamily="Segoe UI Light"
+        mc:Ignorable="d" 
         Title="Playground" Height="450" Width="700" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -20,6 +20,7 @@
             <Menu DockPanel.Dock="Top" FontSize="18" FontFamily="Segoe UI Light">
                 <MenuItem Header="Combine Names" x:Name="ShowCombineNamesView"/>
                 <MenuItem Header="Celebrate Person" x:Name="ShowCelebratePersonView"/>
+                <MenuItem Header="Create User" x:Name="ShowCreateUserView"/>
             </Menu>
           </DockPanel>
 
