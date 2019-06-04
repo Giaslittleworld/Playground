@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PlaygroundWPFUI.Views"
              mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light" Background="White"
-             d:DesignHeight="400" d:DesignWidth="500">
+             d:DesignHeight="420" d:DesignWidth="600">
 
     <Grid Margin="20">
 
@@ -72,4 +72,5 @@
 
         <Button x:Name="SubmitForm" Content="save user" Grid.Column="1" Grid.Row="8" Margin="10" />
     </Grid>
+
 </UserControl>
