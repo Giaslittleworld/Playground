@@ -5,9 +5,13 @@ namespace PlaygroundWPFUI.ViewModels
 {
     public class ShellViewModel : Conductor<object>
     {
-        public ShellViewModel()
+        public void ShowCombineNamesView()
         {
-            // ActivateItem(new CombineNamesViewModel());
+            ActivateItem(new CombineNamesViewModel());
+        }
+
+        public void ShowCelebratePersonView()
+        {
             ActivateItem(new CelebratePersonViewModel());
         }
     }

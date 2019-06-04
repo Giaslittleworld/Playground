@@ -11,6 +11,8 @@ namespace PlaygroundWPFUI.ViewModels
 {
     public class CelebratePersonViewModel : Screen
     {
+        private PersonModel _selectedPerson;
+
         public BindableCollection<PersonModel> People { get; set; }
                
         public CelebratePersonViewModel()
@@ -19,6 +21,15 @@ namespace PlaygroundWPFUI.ViewModels
 
             People = new BindableCollection<PersonModel>(da.GetPeople());
         }
-
+               
+        public PersonModel SelectedPerson
+        {
+            get { return _selectedPerson; }
+            set
+            {
+                _selectedPerson = value;
+                NotifyOfPropertyChange(() => SelectedPerson);
+            }
+        }
     }
 }

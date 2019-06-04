@@ -7,8 +7,23 @@
         mc:Ignorable="d" FontSize="24"
         Title="ShellView" Height="450" Width="700" WindowStartupLocation="CenterScreen">
     <Grid>
-        
-        <ContentControl x:Name="ActiveItem" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28" />
+            <RowDefinition Height="*" /> 
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" >
+            <Menu DockPanel.Dock="Top" FontSize="18">
+                <MenuItem Header="Combine Names" x:Name="ShowCombineNamesView"/>
+                <MenuItem Header="Celebrate Person" x:Name="ShowCelebratePersonView"/>
+            </Menu>
+          </DockPanel>
+
+        <ContentControl Grid.Column="0" Grid.Row="1" x:Name="ActiveItem" />
 
     </Grid>
 </Window>
