@@ -57,9 +57,7 @@ namespace PlaygroundWPFUI.ViewModels
 
         public void Combine()
         {
-
             FullName = $" { FirstName } { LastName } ";
-
         }
     }
 }

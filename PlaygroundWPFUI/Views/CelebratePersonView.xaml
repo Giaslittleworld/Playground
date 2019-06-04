@@ -15,14 +15,19 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="40" />
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            Select Person to hail
+        </TextBlock>
         
-        <ComboBox Grid.Column="1" Grid.Row="1" x:Name="People" SelectedItem="{Binding SelectedPerson}">
+        <ComboBox Grid.Column="1" Grid.Row="2" x:Name="People" SelectedItem="{Binding SelectedPerson}">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -33,9 +38,9 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-        <TextBlock Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">All hail</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">All hail</TextBlock>
 
-        <TextBlock Grid.Column="1" Grid.Row="4" x:Name="SelectedPerson_FullName" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <TextBlock Grid.Column="1" Grid.Row="5" x:Name="SelectedPerson_FullName" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
     </Grid>
 </UserControl>

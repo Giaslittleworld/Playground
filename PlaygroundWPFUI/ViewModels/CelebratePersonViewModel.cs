@@ -11,14 +11,12 @@ namespace PlaygroundWPFUI.ViewModels
 {
     public class CelebratePersonViewModel : Screen
     {
-        private PersonModel _selectedPerson;
-
         public BindableCollection<PersonModel> People { get; set; }
+        private PersonModel _selectedPerson;            
                
         public CelebratePersonViewModel()
         {
             DataAccessLayer da = new DataAccessLayer();
-
             People = new BindableCollection<PersonModel>(da.GetPeople());
         }
                
