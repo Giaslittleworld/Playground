@@ -20,5 +20,17 @@ namespace PlaygroundWPFUI.ViewModels
             People = new BindableCollection<PersonModel>(da.GetPeople());
         }
 
+        private PersonModel _selectedPerson;
+
+        public PersonModel SelectedPerson
+        {
+            get { return _selectedPerson; }
+            set {
+                _selectedPerson = value;
+                NotifyOfPropertyChange(() => SelectedPerson);
+            }
+        }
+
+
     }
 }
