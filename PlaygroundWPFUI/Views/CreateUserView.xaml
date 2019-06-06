@@ -28,7 +28,7 @@
 
         <!-- Username -->
         <TextBlock Text="Username" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" />
-        <TextBox x:Name="Username" Grid.Column="1" Grid.Row="0" Margin="10 5" />
+        <TextBox x:Name="Username" IsEnabled="False" Grid.Column="1" Grid.Row="0" Margin="10 5" />
 
         <!-- Firstname -->
         <TextBlock Text="Firstname" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" />
@@ -47,7 +47,7 @@
         <ComboBox x:Name="Title" Grid.Column="1" Grid.Row="4" Margin="10 5" />
 
         <!-- Email -->
-        <TextBlock Text="Email" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" />
+        <TextBlock Text="EmailPrefix" Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" />
         <Grid Grid.Column="1" Grid.Row="5" Margin="10 5">
 
             <Grid.ColumnDefinitions>
@@ -55,7 +55,7 @@
                 <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="Email" Grid.Column="0" Margin="0 0 5 0"/>
+            <TextBox x:Name="EmailPrefix" IsEnabled="False" Grid.Column="0" Margin="0 0 5 0"/>
             <TextBlock Text="@company.com" Grid.Column="1"/>
 
         </Grid>
@@ -74,3 +74,5 @@
     </Grid>
 
 </UserControl>
+
+<!-- https://caliburnmicro.com/documentation/actions -->

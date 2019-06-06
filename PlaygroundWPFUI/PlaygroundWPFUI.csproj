@@ -73,6 +73,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Models\SalutationModel.cs" />
+    <Compile Include="Models\TitleModel.cs" />
     <Compile Include="ViewModels\CelebratePersonViewModel.cs" />
     <Compile Include="ViewModels\CombineNamesViewModel.cs" />
     <Compile Include="ViewModels\CreateUserViewModel.cs" />
@@ -117,9 +119,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Views\CelebratePersonView.xaml">
       <SubType>Designer</SubType>
